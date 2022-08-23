@@ -20,4 +20,14 @@ public class AccountController {
 		return "redirect:/";
 	}
 	
+	@RequestMapping(value="/login", method=RequestMethod.GET)
+	public String login() {
+		return "account/login";
+	}
+	
+	@RequestMapping(value="/login", method=RequestMethod.POST)
+	public String login(String username, String password) {
+		return "redirect:/";
+	}
+	
 }
